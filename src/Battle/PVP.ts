@@ -13,7 +13,7 @@ export default class PVP extends Battle {
 
     const fightPVP = () => {
       const verifyLifePoints = players.every((player) => player.lifePoints > 0);
-      return !!verifyLifePoints;
+      return verifyLifePoints;
     };
     while (fightPVP()) {
       this.player.attack(this._player2);
